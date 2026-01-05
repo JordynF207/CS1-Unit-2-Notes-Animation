@@ -1,1 +1,18 @@
+.box {
+    background: rgb(99, 184, 240);
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
 
+/* TRANSFORM is a property that has functional values like f(x) to change an element*/
+
+#rotate {
+    transform:rotate(-15deg);
+}
+/* scale(1) is the original size
+    less than 1 makes it smaller greater then 1 makes it bigger */
+#scale {
+    transform:scale(0.5);
+}
