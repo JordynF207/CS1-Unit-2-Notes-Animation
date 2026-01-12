@@ -24,7 +24,28 @@
     100% { background: rgb(175, 133, 200);}
   }
 
-
+/* STEP 1: Configure element to be animated, use the shortcut "animation" property this time to set the name, duration, interations, timing functions 
+*/
+#animated-emoji {
+    animation:move-emoji 2s infinite ease-in-out;
+    display: inline-block;
+    font-size: 40px;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+}
+/*  STEP 2: Define an animation sequence*/
+@keyframes move-emoji {
+    0% { 
+        transform: rotate(0deg); 
+     }
+     50% {
+        transform: rotate(180deg) scale(1.5) translate(50px)  ;
+     }
+    100% {
+        transform:rotate(360deg) ; 
+    }
+}
 
 .box {
     background: rgb(99, 184, 240);
